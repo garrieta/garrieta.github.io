@@ -1,4 +1,3 @@
-<!-- © 2020 Lukas Bolte. All Rights Reserved -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +23,7 @@
     <title>
         Gonzalo R. Arrieta
     </title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/styles.css" rel="stylesheet">
@@ -44,22 +43,22 @@
                     <div class="row row-grid justify-content-center">
                         <div class="section">
                             <div class="col-12 col-md-10">
-                                <h2 class="font-alt">
+                                <h1 class="font-alt">
                                     Welcome!
-                                </h2>
-                                <h3 class="font-alt">
-                                    I'm a PhD student at the Economics Department at Stanford University
-                                </h3>
+                                </h1>
                                 <br>
-                                <p>
+                                <h5>
+                                    I am a fifth year PhD student at the Economics Department at Stanford University
+                                </h5>
+                                <h5>
                                     My research focuses on Experimental and Behavioral Economics
-                                </p>
-
+                                </h5>
+<br>
                                 <p>
                                     Please reach me at <a href="mailto:garrieta@stanford.edu">garrieta[at]stanford.edu</a>
                                 </p>
 
-                                <a class="button" href="cv/CV_Lukas_Bolte.pdf" target="_blank">
+                                <a class="button" href="cv/CV_GonzaloRArrieta.pdf" target="_blank">
                                     Download CV
                                 </a>
                             </div>
@@ -78,9 +77,6 @@
                         <h2 class="font-alt">
                             Research
                         </h2>
-                        <p>
-                            Here you will find the current papers I am working on.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -91,101 +87,35 @@
                     </p>
                     <ul style="list-style-type:square; margin-left:6px; margin-bottom: 0.5cm; font-size:15px; line-height:22px">
                         <li style="margin-bottom: 0.5cm;">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
                             <h6>
-                                Robust contracting under double moral hazard
+                                Caring to Work or Working to Care: The Intra-Family Dynamics of Health Shocks
                             </h6>
                             <p>
-                                <i>with Gabriel Carroll</i>
+                                <i>with Gina Li</i> <div align="right"></div>
                             </p>
-                            <a href="" class="button" data-toggle="modal" data-target=".paper-2-modal">
-                                Abstract
+                                <a class="button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Abstract
                             </a>
-                            <a href="papers/doubleMoralHazard.pdf" target="_blank" class="button">
+                            <a href="papers/healthShocks.pdf" target="_blank" class="button">
                                 PDF
                             </a>
-                            <div class="modal fade paper-2-modal" tabindex="-1" role="dialog"
-                                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            <h5 class="modal-title">
-                                                Robust contracting under double moral hazard
-                                            </h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6>
-                                                Abstract
-                                            </h6>
-                                            <p>
-                                                We study contracting when both principal and agent have to exert noncontractible effort for production to take place and the principal is uncertain about what actions are available to the agent. Any contract is evaluated by the guaranteed expected payoff for the principal no matter what actions the agent may take.  Both parties are risk-neutral; there is no limited liability.  Linear contracts, which leave the agent with a constant share of output in exchange for a fixed fee, are optimal.  This result holds both in a preliminary version of the model where the principal only chooses to supply or not supply an input, and in several suitably-formulated variants of a more general version where the principal may have multiple choices of input.  The model thus generates nontrivial linear sharing rules without relying on either limited liability or risk aversion.
-                                            </p>
-                                            <br>
-                                            With <b>Gabriel Carroll</b>
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-between">
-                                            <button type="button" class="btn" data-dismiss="modal">
-                                                Close
-                                            </button>
-                                        </div>
+                            <a href="papers/healthShocks_appendix.pdf" target="_blank" class="button">
+                                Appendix
+                            </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        We seek to understand how the labor market decisions of the family adjust in
+                                        response to plausibly exogenous health shocks. Family members might work less to
+                                        provide caregiving, or work more in response to medical expenditures and loss of
+                                        income by the ill individual.
+                                        We use records of emergency department (ED) visits and hospitalizations to
+                                        empirically determine the size of these effects.
+                                        Using ED events we find evidence of intra-family insurance.
+                                        By exploring how insurance varies by the severity of the health shock, we find
+                                        that family labor supply responses decrease as the caregiving need increases.
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="margin-bottom: 0.5cm;">
-                            <h6>
-                                The Role of Referrals in Immobility, Inequality, and Inefficiency in Labor Markets
-                            </h6>
-                            <p>
-                                <i>with Nicole Immorlica and Matt Jackson</i> <div align="right"></div>
-                            </p>
-                            <a href="" class="button" data-toggle="modal" data-target=".paper-1-modal">
-                                Abstract
-                            </a>
-                            <a href="papers/jobNetworks.pdf" target="_blank" class="button">
-                                PDF
-                            </a>
-                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3512293" target="_blank" class="button">
-                                SSRN
-                            </a>
-                            <div class="modal fade paper-1-modal" tabindex="-1" role="dialog"
-                                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            <h5 class="modal-title">
-                                                The Role of Referrals in Immobility, Inequality, and
-                                                Inefficiency in Labor Markets
-                                            </h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6>
-                                                Abstract
-                                            </h6>
-                                            <p>
-                                                We study the consequences of job markets' heavy reliance on referrals.
-                                                Referrals screen candidates and lead to better matches and increased productivity, but disadvantage job-seekers who have few or no connections to employed workers, leading to increased inequality.
-                                                Coupled with homophily, referrals also lead to immobility: a demographic group's low current employment rate leads that group to have relatively low future employment as well.
-                                                We identify conditions under which distributing referrals more evenly across a population not only reduces inequality, but also improves future productivity and economic mobility.
-                                                We use the model to examine optimal policies, showing that one-time affirmative action policies involve short-run production losses, but lead to long-term improvements in equality, mobility, and productivity due to induced changes in future referrals.
-                                                We also examine how the possibility of firing workers changes the effects of referrals.
-                                            </p>
-                                            <br>
-                                            With <b>Nicole Immorlica</b> and <b>Matt Jackson</b>.
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-between">
-                                            <button type="button" class="btn" data-dismiss="modal">
-                                                Close
-                                            </button>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
                         </li>
                     </ul>
                     <br>
@@ -195,58 +125,19 @@
                     <ul style="list-style-type:square; margin-left:6px;  font-size:15px; line-height:22px">
                         <li style="margin-bottom: 0.5cm;">
                             <h6>
-                                The Role of Memory in Belief Formation
+                                Red or Blue Pill? A Positive Welfare Analysis
                             </h6>
                             <p>
-                                <i>with Markus Möbius, Tanya Rosenblat, and Pierre-Luc Vautrey</i>
+                                <i>with Lukas Bolte</i>
                             </p>
                         </li>
                         <li style="margin-bottom: 0.5cm;">
                             <h6>
-                                Motivated Mislearning
+                                Paternalistic interventions by Certified Financial Planners
                             </h6>
                             <p>
-                                <i>with Tony Q. Fan</i>
+                                <i>with Sandro Ambuehl, Bjoern Bartling, and B.Douglas Bernheim</i>
                             </p>
-                            <a href="" class="button" data-toggle="modal" data-target=".paper-3-modal">
-                                Abstract
-                            </a>
-                            <div class="modal fade paper-3-modal" tabindex="-1" role="dialog"
-                                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            <h5 class="modal-title" id="exampleModalScrollableTitle">Motivated
-                                                Mislearning
-                                            </h5>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6>
-                                                Abstract
-                                            </h6>
-                                            <p>
-                                                Can individuals mislearn from mere repetitions of information when they
-                                                are motivated to do so? In an ego-relevant setting, we find that
-                                                participants mislearn more from repeated ego-favorable information than
-                                                from repeated ego-unfavorable information.
-                                                Effects are not explained by participants' inability to identify the
-                                                redundant nature of such information.
-                                                Consistent with the motivated reasoning mechanism, the differential
-                                                effect is completely driven by participants who report a high importance
-                                                of ego-favorable beliefs.
-                                            </p>
-                                            <br>
-                                            With <b>Tony Q. Fan</b>
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-between">
-                                            <button type="button" class="btn" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -260,15 +151,15 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <a href="https://github.com/LukasBolte"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/LukasBolte_" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://scholar.google.com/citations?user=EJe7Sq4AAAAJ&hl=en&authuser=2"><i class="fab fa-google"></i></a>
+                <a href="https://github.com/garrieta"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/gonzaloarrieta" target="_blank"><i class="fab fa-twitter"></i></a>
+<!--                <a href="https://scholar.google.com/citations?user=EJe7Sq4AAAAJ&hl=en&authuser=2"><i class="fab fa-google"></i></a>-->
             </div>
         </div>
         <div class="row">
             <div class="col-12 text-center">
                 <p>
-                    © 2020 Lukas Bolte
+                    © 2021 Gonzalo R. Arrieta
                 </p>
             </div>
         </div>
@@ -277,8 +168,9 @@
 
 <script src="static/js/jquery-3.2.1.min.js"></script>
 <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
-<script src="static/plugin/bootstrap/js/popper.min.js"></script>
-<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="static/plugin/bootstrap/js/popper.min.js"></script>-->
+<!--<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 

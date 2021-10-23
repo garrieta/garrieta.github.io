@@ -33,14 +33,14 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover ;
+    background-size: 100% 100% ;
 }
 
 .section {
 	padding: 50px;
 }
 .full-screen {
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .space {

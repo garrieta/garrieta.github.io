@@ -40,7 +40,7 @@ body {
 	padding: 50px;
 }
 .full-screen {
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .space {
@@ -58,7 +58,7 @@ body {
 }
 
 .row.row-grid [class*="col-"] + [class*="col-"] {
-    margin-top: 15px;
+    margin-top: 1px;
 }
 
 @media (min-width: 1200px) {

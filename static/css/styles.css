@@ -132,11 +132,3 @@ a {
 #button-4:hover #underline {
   left: 0;
 }
-
-#alignContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  #gina {display:inline-block;} 
-#ajhe {display:inline-block;text-align: right;} 

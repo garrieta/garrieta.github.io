@@ -139,4 +139,4 @@ a {
     align-items: flex-end;
   }
   #gina {display:inline-block;} 
-#ajhe {display:inline-block;float: right;} 
+#ajhe {display:inline-block;text-align: right;} 

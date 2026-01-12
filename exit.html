@@ -56,12 +56,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <h1>End of Study</h1>
 
-        <p class="thanks">Thank you for completing the first survey of the study.</p>
+<p id="thanksLine" class="thanks">
+  Thank you for completing the first survey of the study.
+</p>
 
-        <p>
-            Your answers have been recorded successfully. We will email you a $20 Amazon gift card for your participation
-            in the first survey.
-        </p>
+<p id="paymentLine">
+  Your answers have been recorded successfully. We will email you a $20 Amazon gift card for your participation
+  in the first survey.
+</p>
+
+
 
         <p>
             Within a few weeks, <strong>you will receive an email inviting you to participate in the second survey</strong>.
@@ -78,5 +82,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="mailto:uzheconomicsexperiments@gmail.com">uzheconomicsexperiments@gmail.com</a>.
         </p>
     </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const source = (params.get("source") || "").toLowerCase();
+
+    // Example: customize for Google Ads traffic
+    if (source === "googlead" || source === "googleads") {
+      document.getElementById("thanksLine").textContent =
+        "Thank you for participating in our study (recruited via Google).";
+
+      document.getElementById("paymentLine").textContent =
+        "Your answers have been recorded successfully. You will receive your Amazon gift card by email shortly.";
+    }
+
+    // Optional: send the source into GTM as an event/variable
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "end_page_view",
+      traffic_source: source || "unknown"
+    });
+  });
+</script>
+
 </body>
 </html>

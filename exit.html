@@ -89,13 +89,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const source = (params.get("source") || "").toLowerCase();
 
     // Example: customize for Google Ads traffic
-    if (source === "googlead" || source === "googleads") {
-      document.getElementById("thanksLine").textContent =
-        "Thank you for participating in our study (recruited via Google).";
-
-      document.getElementById("paymentLine").textContent =
-        "Your answers have been recorded successfully. You will receive your Amazon gift card by email shortly.";
-    }
+    // if (source === "googlead" || source === "googleads") {
+    //   document.getElementById("thanksLine").textContent =
+    //     "Thank you for participating in our study (recruited via Google).";
+    //
+    //   document.getElementById("paymentLine").textContent =
+    //     "Your answers have been recorded successfully. You will receive your Amazon gift card by email shortly.";
+    // }
 
     // Optional: send the source into GTM as an event/variable
     window.dataLayer = window.dataLayer || [];
